@@ -8,7 +8,8 @@
 
 
 - how to check running ports
-  https://qiita.com/sonoshou/items/cc2b740147ba1b8da1f3
+  1. https://qiita.com/sonoshou/items/cc2b740147ba1b8da1f3
+  2. https://katuo-ai.com/address-already-in-use/
 
 
 ```bash
