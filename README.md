@@ -9,3 +9,10 @@
   - phase 4: アバターがマッチョになる
   - phase 5:
   - phase 6:
+
+## Studying History
+  - Jan 19th: [laravel-docker](https://github.com/KeisakuHiga/monthly-study-CA-alumni/tree/master/laravel-docker)
+  - Feb 2nd: TBD
+  - 
+  - 
+  - 
