@@ -78,17 +78,17 @@
 ## 二つのコンテナの接続確認
 1. mysql_containerでテストファイルを作成
 
-  1. mysql_containerの中に入る
-      ```bash
-      $ docker exec -it mysql_container bash
-      ```
+    1. mysql_containerの中に入る
+        ```bash
+        $ docker exec -it mysql_container bash
+        ```
 
-  1. テストファイルを作成する
-      ```bash
-      $ /# cd var/lib/mysql/
-      $ /var/lib/mysql/mysql# ls
-      $ /var/lib/mysql# echo shinchokudoudesuka? > test.txt
-      ```
+    1. テストファイルを作成する
+        ```bash
+        $ /# cd var/lib/mysql/
+        $ /var/lib/mysql/mysql# ls
+        $ /var/lib/mysql# echo shinchokudoudesuka? > test.txt
+        ```
 
 1. テストファイルをstrage_containerで確認
 
