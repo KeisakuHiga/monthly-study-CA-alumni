@@ -3,7 +3,7 @@
 1. [dockerでmysqlを使う](https://qiita.com/astrsk_hori/items/e3d6c237d68be1a6f548)
 1. [docker-library/docs/mysql](https://github.com/docker-library/docs/tree/master/mysql)
 1. [dockerでmysqlのデータを保存する方法](https://qiita.com/TakashiOshikawa/items/11316ffd2146b36b0d7d)
-
+1. [MYSQL公式5.6マニュアル](https://dev.mysql.com/doc/refman/5.6/ja/)
 ## dockerイメージのpull
 1. mysqlイメージをpull
     ```bash
