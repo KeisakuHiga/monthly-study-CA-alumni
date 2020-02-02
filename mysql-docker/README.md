@@ -114,3 +114,28 @@
         shinchokudoudesuka?
         ```
 1. この続きは、参考サイトのNo.3の[ストレージコンテナにデータを追加(DBのデータ)](https://qiita.com/TakashiOshikawa/items/11316ffd2146b36b0d7d)を見ながら進めよう。
+
+## SQLストレージエンジンについての記事
+[第１回：MySQLストレージエンジンの概要](https://thinkit.co.jp/free/article/0608/1/1/
+1. クエリを受けたSQLはどんな処理のクエリかをまず確認。
+1. 次に実際のデータにアクセスしに行くんだけれども、必要なデータがどんなファイル形式かを知る必要がある。
+1. その情報を保持しているのがストレージエンジンらしく、ストレージエンジンによって効率的にデータを扱うことができるっぽい。
+1. ストレージエンジンには色々種類があって、その中でも```InnoDB```がデフォルトで汎用性が高いんだと。
+
+```
+mysql> show engines\g
++--------------------+---------+----------------------------------------------------------------+--------------+------+------------+
+| Engine             | Support | Comment                                                        | Transactions | XA   | Savepoints |
++--------------------+---------+----------------------------------------------------------------+--------------+------+------------+
+| FEDERATED          | NO      | Federated MySQL storage engine                                 | NULL         | NULL | NULL       |
+| MEMORY             | YES     | Hash based, stored in memory, useful for temporary tables      | NO           | NO   | NO         |
+| InnoDB             | DEFAULT | Supports transactions, row-level locking, and foreign keys     | YES          | YES  | YES        |
+| PERFORMANCE_SCHEMA | YES     | Performance Schema                                             | NO           | NO   | NO         |
+| MyISAM             | YES     | MyISAM storage engine                                          | NO           | NO   | NO         |
+| MRG_MYISAM         | YES     | Collection of identical MyISAM tables                          | NO           | NO   | NO         |
+| BLACKHOLE          | YES     | /dev/null storage engine (anything you write to it disappears) | NO           | NO   | NO         |
+| CSV                | YES     | CSV storage engine                                             | NO           | NO   | NO         |
+| ARCHIVE            | YES     | Archive storage engine                                         | NO           | NO   | NO         |
++--------------------+---------+----------------------------------------------------------------+--------------+------+------------+
+9 rows in set (0.00 sec)
+```
